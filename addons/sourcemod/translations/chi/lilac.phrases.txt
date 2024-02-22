@@ -1,0 +1,74 @@
+"Phrases"
+{
+	"welcome_msg"
+	{
+		"#format"	"{1:s}"
+		"chi"		"游戏开始进行,反作弊系统已启动"
+	}
+
+	"kick_query_failure"
+	{
+		"chi"		"错误：steam验证或联机房间失败，如果此问题仍然存在，请重新启动游戏"
+	}
+
+	"kick_interp_exploit"
+	{
+		"#format"	"{1:.0f},{2:d},{3:.3f}"
+		"chi"		"检测到参数利用：您的interp过高({1}ms / {2}ms 最高)。请设置您的 cl_interp 参数至 {3} 或更低。"
+	}
+
+	"tban_ping_high"
+	{
+		"#format"	"{1:.0f},{2:d}"
+		"chi"		"很抱歉,你的网络延迟已超过服务器允许的最大标准[限制为{2} PING]"
+	}
+
+	"kick_ban_genetic"
+	{
+		"chi"		"您因为开挂作弊被VAC封禁"
+	}
+
+	"ban_angle"
+	{
+		"chi"		"您因为开挂作弊被VAC封禁"
+	}
+
+	"ban_chat_clear"
+	{
+		"chi"		"您因为开挂作弊被VAC封禁"
+	}
+
+	"ban_convar"
+	{
+		"chi"		"您因为开挂作弊被VAC封禁"
+	}
+
+	"ban_bhop"
+	{
+		"chi"		"您因为开挂作弊被VAC封禁"
+	}
+
+	"ban_aimbot"
+	{
+		"chi"		"您因为开挂作弊被VAC封禁"
+	}
+
+	"ban_aimlock"
+	{
+		"chi"		"您因为开挂作弊被VAC封禁"
+	}
+	"ban_anti_duck_delay"
+	{
+		"chi"		"您因为开挂作弊被VAC封禁"
+	}
+
+	"ban_noisemaker"
+	{
+		"chi"		"您因为开挂作弊被VAC封禁"
+	}
+                "admin_chat_warning_generic"
+	{
+		"#format"	"{1:s},{2:s},{3:d}"
+		"chi"		"此玩家{1}被检测出作弊行为，作弊类型【{2}】{ (检测次数: {3})"
+	}
+}

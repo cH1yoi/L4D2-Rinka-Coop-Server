@@ -1,0 +1,150 @@
+"Phrases"
+{
+	"Ready Up Countdown"
+	{
+		"#format"		"{1:d}"
+		"en"			"准备期间： {1} 秒"
+	}
+
+	"Round Begin Countdown"
+	{
+		"#format"		"{1:d}"
+		"en"			"即将解锁： {1} 秒"
+	}
+
+	"Move Out"
+	{
+		"en"			"解除锁定"
+	}
+
+	"Leavers Message"
+	{
+		"en"			"[提示]等待所有玩家准备就绪。"
+	}
+
+	"Round Started"
+	{
+		"en"			"[提示]章节初始化。"
+	}
+
+	"Saferoom Locked"
+	{
+		"en"			"[提示]已锁定安全区域。"
+	}
+
+	"Saferoom Unlocked"
+	{
+		"en"			"[提示]已解锁安全区域。"
+	}
+
+	"Ready Up Time Ended"
+	{
+		"en"			"[提示]已过准备时间。"
+	}
+
+	"Admin Locks"
+	{
+		"#format"		"{1:N}"
+		"en"			"[提示]管理员{1}锁定了安全区域。"
+	}
+
+	"Admin Unlocks"
+	{
+		"#format"		"{1:N}"
+		"en"			"[提示]管理员{1}解锁了安全区域。"
+	}
+
+	"Spectator Ready"
+	{
+		"en"			"[提示]请先加入阵营。"
+	}
+
+	"You Are Ready"
+	{
+		"en"			"[提示]已准备就绪。"
+	}
+
+	"You Are Unready"
+	{
+		"en"			"[提示]已取消准备。"
+	}
+
+	"Ready Up Limit"
+	{
+		"en"			"[提示]禁止频繁取消准备。"
+	}
+
+	"Admin Controls"
+	{
+		"en"			"[提示]管理员控制了安全区域。"
+	}
+
+	"Player Is Ready"
+	{
+		"en"			"[提示]已准备就绪。"
+	}
+
+	"Player Is Unready"
+	{
+		"en"			"[提示]已取消就绪。"
+	}
+
+	"Notify Survivors Ready"
+	{
+		"#format"		"{1:d},{2:d},{3:.1f%%}"
+		"en"			"[提示]生还者：{1}人已准备，共{2}人，占比{3}％。"
+	}
+
+	"Notify Infected Ready"
+	{
+		"#format"		"{1:d},{2:d},{3:.1f%%}"
+		"en"			"[提示]感染者：{1}人已准备，共{2}人，占比{3}％。"
+	}
+
+	"Notify Survivors Unready"
+	{
+		"#format"		"{1:d},{2:d},{3:.1f%%}"
+		"en"			"[提示]生还者：{1}人未准备，共{2}人，占比{3}％。"
+	}
+
+	"Notify Infected Unready"
+	{
+		"#format"		"{1:d},{2:d},{3:.1f%%}"
+		"en"			"[提示]感染者：{1}人未准备，共{2}人，占比{3}％。"
+	}
+	
+	"DoorLock RdyPercnt"
+	{
+		"en"			"[提示]准备就绪的占比达到%d％可提前进入解锁阶段。"
+	}
+
+	"Menu Title"
+	{
+		"en"			"---------就绪状态---------"
+	}
+
+	"Menu Ready"
+	{
+		"en"			"准备就绪"
+	}
+
+	"Menu Unready"
+	{
+		"en"			"取消准备"
+	}
+
+	"Menu Survivor"
+	{
+		"en"			"生还者阵营"
+	}
+
+	"Menu Infected"
+	{
+		"en"			"感染者阵营"
+	}
+
+	"Menu Close"
+	{
+		"en"			"退出面板"
+	}
+}

@@ -1,0 +1,30 @@
+"CountryShow"
+{
+	// {PLAYERNAME}: 玩家名称
+	// {STEAMID}: 玩家STEAM ID
+	// {PLAYERCOUNTRY}: 玩家的国家
+	// {PLAYERCOUNTRYSHORT}: 玩家的国家短代号
+	// {PLAYERCOUNTRYSHORT3}: 玩家的国家长代号
+	// {PLAYERCITY}: 玩家的城市
+	// {PLAYERREGION}: 玩家的地区
+	// {PLAYERIP}: 玩家IP
+	// {PLAYERTYPE}: 是否为管理员
+	
+	// {default}: 白色
+	// {green}: 橘色
+	// {olive}: 绿色
+	// {lightgreen}: 浅绿色
+	// {red}: 红色
+	// {blue}: 蓝色
+	// Warning: {lightgreen}、{red}、{blue}, 这三种颜色的其中两种不可出现在同一句里
+	"messages"  //除了管理员其他人会看到的
+	{
+		"playerjoin"		"{default}[{olive}花{default}] {blue}玩家 {green}{PLAYERNAME} {olive}{STEAMID} {blue}连接{default}. ({green}{PLAYERCOUNTRY}{default})"
+		"playerdisc"		"{default}[{olive}花{default}] {red}玩家 {green}{PLAYERNAME} {olive}{STEAMID} {red}断开{default}. ({green}{DISC_REASON}{default})"
+	}
+	"messages_admin"  //管理员会看到的
+	{
+		"playerjoin"		"{default}[{olive}花{default}] {blue}玩家 {green}{PLAYERNAME} {blue}连接{default}. ({green}{PLAYERCOUNTRY}, {PLAYERREGION}, {PLAYERCITY}{default}) IP: {green}{PLAYERIP}{default} {olive}<ID:{STEAMID}>"
+		"playerdisc"		"{default}[{olive}花{default}] {red}玩家 {green}{PLAYERNAME} {red}断开{default}. ({green}{DISC_REASON}{default}) IP: {green}{PLAYERIP}{default} {olive}<ID:{STEAMID}>"
+	}
+}

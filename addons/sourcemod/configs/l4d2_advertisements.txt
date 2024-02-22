@@ -1,0 +1,58 @@
+"Advertisements"
+{
+	"1"
+	{
+		"type"	"S"
+		"text"	"{GREEN}当前地图: {CURRENTMAP} , {LIGHTGREEN}时间: {TIME24}, {DEFAULT}Server Tickrate: {TICKRATE}"
+	}
+	"2"
+	{
+		"type"	"S"
+		"text"	"{LIGHTGREEN}闻着妹的味就去了,这你不给他个药?"
+	}
+	"3"
+	{
+		"type"	"S"
+		"text"	"{GREEN}对待萌新一定要友爱{TEAM}(往死里打！)"
+	}
+	"4"
+	{
+		"type"	"S"
+		"text"	"{GREEN}凛花:{LIGHTGREEN}坏了，被打成战俘出列了!"
+	}
+	"5"
+	{
+		"type"	"S"
+		"text"	"{GREEN}如何游玩:{LIGHTGREEN}X↑"
+	}
+	"6"
+	{
+		"type"	"S"
+		"text"	"{GREEN}凛花:{LIGHTGREEN}嘿嘿嘿!"
+	}
+	"7"
+	{
+		"type"	"S"
+		"text"	"{GREEN}凛花:{LIGHTGREEN}坏了，每天对抗都凑不齐8个人"
+	}
+	"8"
+	{
+		"type"	"S"
+		"text"	"{GREEN}凛花:{LIGHTGREEN}?"
+	}
+	"9"
+	{
+		"type"	"S"
+		"text"	"{GREEN}集火{LIGHTGREEN}TANK!"
+	}
+    "10"
+	{
+		"type"	"S"
+		"text"	"{GREEN}不知道指令{LIGHTGREEN};按H看看?.."
+	}
+    "10"
+	{
+		"type"	"S"
+		"text"	"{GREEN}vote菜单{LIGHTGREEN}里面有很多可选项哦!.."
+	}
+}

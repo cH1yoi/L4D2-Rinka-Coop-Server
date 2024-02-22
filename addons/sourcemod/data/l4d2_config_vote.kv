@@ -1,0 +1,353 @@
+"选择投票类型"
+{
+	"服务端管理"
+	{
+		"MenuTeamFlags"	"14"
+
+		"重启服务器"
+		{
+			"Type"			"ServerCommand"
+			"MenuTeamFlags"	"14"
+			"VoteTeamFlags"	"14"
+			"Description"	"重启服务器"
+            "AdminOneVotePassed"    "1"
+            "AdminOneVoteAgainst"   "1"
+			"Command"		"sm_restart"
+		}
+		"重置地图"
+		{
+			"Type"			"ServerCommand"
+			"MenuTeamFlags"	"14"
+			"VoteTeamFlags"	"14"
+			"Description"	"重启当前章节"
+            "AdminOneVotePassed"    "1"
+            "AdminOneVoteAgainst"   "1"
+			"Command"		"sm_restartmap"
+		}
+		"移除动态大厅"
+		{
+			"Type"			"ServerCommand"
+			"MenuTeamFlags"	"14"
+			"VoteTeamFlags"	"14"
+            "AdminOneVotePassed"    "1"
+            "AdminOneVoteAgainst"   "1"
+			"Description"	"移除动态大厅"
+			"Command"		"sm_unreserve"
+		}
+        "人数选项"
+        {
+            "MenuTeamFlags"	"12"
+
+            "5"
+            {
+                "Type"			"ServerCommand"
+			    "MenuTeamFlags"	"12"
+			    "VoteTeamFlags"	"12"
+                "AdminOneVotePassed"    "1"
+                "AdminOneVoteAgainst"   "1"
+			    "Description"	"调整至5人"
+			    "Command"		"sm_slots 5"
+            }
+			"6"
+            {
+                "Type"			"ServerCommand"
+			    "MenuTeamFlags"	"12"
+			    "VoteTeamFlags"	"12"
+                "AdminOneVotePassed"    "1"
+                "AdminOneVoteAgainst"   "1"
+			    "Description"	"调整至6人"
+			    "Command"		"sm_slots 6"
+            }
+			"7"
+            {
+                "Type"			"ServerCommand"
+			    "MenuTeamFlags"	"12"
+			    "VoteTeamFlags"	"12"
+                "AdminOneVotePassed"    "1"
+                "AdminOneVoteAgainst"   "1"
+			    "Description"	"调整至7人"
+			    "Command"		"sm_slots 7"
+            }
+			"8"
+            {
+                "Type"			"ServerCommand"
+			    "MenuTeamFlags"	"12"
+			    "VoteTeamFlags"	"12"
+                "AdminOneVotePassed"    "1"
+                "AdminOneVoteAgainst"   "1"
+			    "Description"	"调整至8人"
+			    "Command"		"sm_slots 8"
+            }
+			"9"
+            {
+                "Type"			"ServerCommand"
+			    "MenuTeamFlags"	"12"
+			    "VoteTeamFlags"	"12"
+                "AdminOneVotePassed"    "1"
+                "AdminOneVoteAgainst"   "1"
+			    "Description"	"调整至9人"
+			    "Command"		"sm_slots 9"
+            }
+			"10"
+            {
+                "Type"			"ServerCommand"
+			    "MenuTeamFlags"	"12"
+			    "VoteTeamFlags"	"12"
+                "AdminOneVotePassed"    "1"
+                "AdminOneVoteAgainst"   "1"
+			    "Description"	"调整至5人"
+			    "Command"		"sm_slots 10"
+            }
+			"11"
+            {
+                "Type"			"ServerCommand"
+			    "MenuTeamFlags"	"12"
+			    "VoteTeamFlags"	"12"
+                "AdminOneVotePassed"    "1"
+                "AdminOneVoteAgainst"   "1"
+			    "Description"	"调整至11人"
+			    "Command"		"sm_slots 11"
+            }
+			"12"
+            {
+                "Type"			"ServerCommand"
+			    "MenuTeamFlags"	"12"
+			    "VoteTeamFlags"	"12"
+                "AdminOneVotePassed"    "1"
+                "AdminOneVoteAgainst"   "1"
+			    "Description"	"调整至12人"
+			    "Command"		"sm_slots 12"
+            }
+        }
+		"服务器匹配"
+		{
+			"MenuTeamFlags"		"12"
+
+			"开启(默认)"
+			{
+                "Type"			"ServerCommand"
+			    "MenuTeamFlags"	"12"
+			    "VoteTeamFlags"	"12"
+                "AdminOneVotePassed"    "1"
+                "AdminOneVoteAgainst"   "1"
+			    "Description"	"开启"
+			    "Command"		"sm_cvar server_lobby_disable 0"
+            }
+			"关闭"
+			{
+                "Type"			"ServerCommand"
+			    "MenuTeamFlags"	"12"
+			    "VoteTeamFlags"	"12"
+                "AdminOneVotePassed"    "1"
+                "AdminOneVoteAgainst"   "1"
+			    "Description"	"关闭"
+			    "Command"		"sm_cvar server_lobby_disable 1"
+            }
+		}
+	}
+
+	"难度选项"
+	{
+		"MenuTeamFlags"	"12"
+
+		"简单"
+		{
+			"Type"			"ServerCommand"
+			"MenuTeamFlags"	"12"
+			"VoteTeamFlags"	"12"
+			"Description"	"简单Easy"
+			"Command"		"sm_cvar z_difficulty easy"
+		}
+		"普通"
+		{
+			"Type"			"ServerCommand"
+			"MenuTeamFlags"	"12"
+			"VoteTeamFlags"	"12"
+			"Description"	"普通Normal"
+			"Command"		"sm_cvar z_difficulty normal"
+		}
+		"高级"
+		{
+			"Type"			"ServerCommand"
+			"MenuTeamFlags"	"12"
+			"VoteTeamFlags"	"12"
+			"Description"	"高级Hard"
+			"Command"		"sm_cvar z_difficulty hard"
+		}
+		"专家"
+		{
+			"Type"			"ServerCommand"
+			"MenuTeamFlags"	"12"
+			"VoteTeamFlags"	"12"
+			"Description"	"专家Impossible"
+			"Command"		"sm_cvar z_difficulty impossible"
+		}
+	}
+
+	"投票换图"
+	{
+		"Type"			"ExternalVote"
+		"MenuTeamFlags"	"12"
+		"Command"		"sm_chmap"
+	}
+
+	"插件选项"
+	{
+		"MenuTeamFlags"	"12"
+
+		"M60/榴弹补给"
+		{
+			"MenuTeamFlags"	"12"
+
+			"开启(默认)"
+			{
+				"Type"			"ServerCommand"
+				"MenuTeamFlags"	"12"
+				"VoteTeamFlags"	"12"
+				"Description"	"开启"
+				"Command"		"exec vote/M60_on.cfg"
+			}
+			"关闭"
+			{
+				"Type"			"ServerCommand"
+				"MenuTeamFlags"	"12"
+				"VoteTeamFlags"	"12"
+				"Description"	"关闭"
+				"Command"		"exec vote/M60_off.cfg"
+			}
+		}
+		"僵尸死亡溶解"
+		{
+			"MenuTeamFlags"	"12"
+
+			"开启(默认)"
+			{
+				"Type"			"ServerCommand"
+				"MenuTeamFlags"	"12"
+				"VoteTeamFlags"	"12"
+				"Description"	"开启"
+				"Command"		"exec vote/rongjie_on.cfg"
+			}
+			"关闭"
+			{
+				"Type"			"ServerCommand"
+				"MenuTeamFlags"	"12"
+				"VoteTeamFlags"	"12"
+				"Description"	"关闭"
+				"Command"		"exec vote/rongjie_off.cfg"
+			}
+		}
+		"武器自动拾取激光"
+		{
+			"MenuTeamFlags"	"12"
+
+			"开启"
+			{
+				"Type"			"ServerCommand"
+				"MenuTeamFlags"	"12"
+				"VoteTeamFlags"	"12"
+				"Description"	"开启"
+				"Command"		"sm_cvar l4d2_enabled_add_laser_sight_switch 1"
+			}
+			"关闭(默认)"
+			{
+				"Type"			"ServerCommand"
+				"MenuTeamFlags"	"12"
+				"VoteTeamFlags"	"12"
+				"Description"	"关闭"
+				"Command"		"sm_cvar l4d2_enabled_add_laser_sight_switch 0"
+			}
+		}
+		"过关回血"
+		{
+			"MenuTeamFlags"	"12"
+
+			"开启(默认)"
+			{
+				"Type"			"ServerCommand"
+				"MenuTeamFlags"	"12"
+				"VoteTeamFlags"	"12"
+				"Description"	"开启"
+				"Command"		"sm_cvar l4d2_restore_health_flag 1"
+			}
+			"关闭"
+			{
+				"Type"			"ServerCommand"
+				"MenuTeamFlags"	"12"
+				"VoteTeamFlags"	"12"
+				"Description"	"关闭"
+				"Command"		"sm_cvar l4d2_restore_health_flag 0"
+			}
+		}
+        "击杀音效"
+        {
+            "MenuTeamFlags"	"12"
+
+            "开启(默认)"
+            {
+				"Type"			"ServerCommand"
+				"MenuTeamFlags"	"12"
+				"VoteTeamFlags"	"12"
+				"Description"	"关闭"
+				"Command"		"sm_cvar sound_enable 1"
+			}
+             "关闭"
+            {
+				"Type"			"ServerCommand"
+				"MenuTeamFlags"	"12"
+				"VoteTeamFlags"	"12"
+				"Description"	"关闭"
+				"Command"		"sm_cvar sound_enable 0"
+			}
+        }
+	}
+	"特感选项"
+	{
+		"MenuTeamFlags"	"12"
+
+		"多特菜单"
+		{
+			"Type"			"ExternalVote"
+			"MenuTeamFlags"	"12"
+			"Command"		"sm_tgvote"
+		}
+		"特感加强"
+		{
+			"开启(默认)"
+			{
+				"Type"			"ServerCommand"
+				"MenuTeamFlags"	"12"
+				"VoteTeamFlags"	"12"
+				"Description"	"开启"
+				"Command"		"exec vote/SuperAI_on.cfg"
+			}
+			"关闭"
+			{
+				"Type"			"ServerCommand"
+				"MenuTeamFlags"	"12"
+				"VoteTeamFlags"	"12"
+				"Description"	"关闭"
+				"Command"		"exec vote/SuperAI_off.cfg"
+			}
+		}
+		"连跳Tank"
+		{
+			"开启"
+			{
+				"Type"			"ServerCommand"
+				"MenuTeamFlags"	"12"
+				"VoteTeamFlags"	"12"
+				"Description"	"开启"
+				"Command"		"sm_cvar ai_Tank_Bhop 1"
+			}
+			"关闭(默认)"
+			{
+				"Type"			"ServerCommand"
+				"MenuTeamFlags"	"12"
+				"VoteTeamFlags"	"12"
+				"Description"	"关闭"
+				"Command"		"sm_cvar ai_Tank_Bhop 0"
+			}
+		}
+	}
+}

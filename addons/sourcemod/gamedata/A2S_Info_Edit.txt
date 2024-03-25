@@ -1,0 +1,188 @@
+"Games"
+{
+	"#default"
+	{
+		"Offsets"
+		{
+			"OS"
+			{
+				"linux"		"1"
+				"windows"	"0"
+			}
+		}
+	}
+
+	"left4dead2" 
+	{
+		"MemPatches"
+		{
+			"RebuildInfo_MapName"
+			{
+				"signature"		"CMaster::RebuildInfo"
+
+				"linux"
+				{
+					"offset"	"8Ah"
+					"verify"	"\x8B\x06\x89\x34\x24\xFF\x50\x3C"
+					"patch"		"\xB8\x00\x00\x00\x00\x90\x90\x90"
+				}
+				
+				"windows"
+				{
+					"offset"	"6Bh"
+					"verify"	"\x8B\x07\x8B\x50\x38\x8B\xCF\xFF\xD2"
+					"patch"		"\xB8\x00\x00\x00\x00\x90\x90\x90\x90"
+				}
+			}
+
+			"GameDescription"
+			{
+				"signature"		"GetGameDescription"
+
+				"linux"
+				{
+					"offset"	"6h"
+					"verify"	"\xC7\x44\x24\x08"
+					"patch"		"\xC7\x44\x24\x08\x00\x00\x00\x00"
+				}
+				
+				"windows"
+				{
+					"offset"	"0h"
+					"verify"	"\x68"
+					"patch"		"\x68\x00\x00\x00\x00"
+				}
+			}
+
+			"ProcessConnectionlessPacket_BypassSteam"
+			{
+				"signature"		"CBaseServer::ProcessConnectionlessPacket"
+
+				"linux"
+				{
+					"offset"	"67Dh"
+
+					"verify"	"\x0F\x84\x3E\x05\x00\x00"
+					"patch"		"\x90\x90\x90\x90\x90\x90"
+				}
+
+				"windows"
+				{
+					"offset"	"EF2h"
+
+					"verify"	"\x74\x25"
+					"patch"		"\x90\x90"
+				}
+			}
+		}
+
+		"Offsets"
+		{
+			"BypassSteam_Count"
+			{
+				"linux"			"6"
+				"windows"		"2"
+			}
+		}
+
+		"Addresses"
+		{
+			"ProcessConnectionlessPacket"
+			{
+				"linux"
+				{
+					"signature"	"CBaseServer::ProcessConnectionlessPacket"
+					"offset"	"1661"
+				}
+
+				"windows"
+				{
+					"signature"	"CBaseServer::ProcessConnectionlessPacket"
+					"offset"	"3826"
+				}
+			}
+
+			"CDirector"
+			{
+				"linux"
+				{
+					"signature"	"TheDirector"
+				}
+				"windows"
+				{
+					"signature"	"CDirectorMusicBanks::OnRoundStart"
+					"read"		"12"
+				}
+				"read"	"0"
+			}
+
+			"g_pMatchExtL4D"
+			{
+				"linux"
+				{
+					"signature"	"CTerrorGameRules::GetMissionInfo"
+					"read"		"44"
+				}
+				"windows"
+				{
+					"signature"	"CTerrorGameRules::GetMissionInfo"
+					"read"		"42"
+				}
+				"read"	"0"
+			}
+		}
+
+		"Signatures"
+		{
+			/* CBaseServer::ProcessConnectionlessPacket(CBaseServer *, netadr_s *) */
+			"CBaseServer::ProcessConnectionlessPacket"
+			{
+				"library"	"engine"
+				"linux"		"@_ZN11CBaseServer27ProcessConnectionlessPacketEP11netpacket_s"
+				"windows"	"\x55\x8B\xEC\x81\xEC\x58\x0A\x00\x00\xA1\x2A\x2A\x2A\x2A\x33\xC5\x89\x45\xFC\x8B\x45\x08"
+				/* 55 8B EC 81 EC 58 0A 00 00 A1 ? ? ? ? 33 C5 89 45 FC 8B 45 08 */
+			}
+
+			/* CMaster::RebuildInfo(CBaseServer *) */
+			"CMaster::RebuildInfo"
+			{
+				"library"	"engine"
+				"linux"		"@_ZN7CMaster11RebuildInfoEP11CBaseServer"
+				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x33\xC5\x89\x45\xFC\xF3\x0F\x10\x05\x2A\x2A\x2A\x2A\x56\x8B\xF1\x57\x8B\x7D\x08\x8D\x8E"
+			}
+
+			/* GetGameDescription(void) */
+			"GetGameDescription"
+			{
+				"library"	"server"
+				"linux"		"@_Z18GetGameDescriptionv"
+				"windows"	"\x68\x2A\x2A\x2A\x2A\x68\x80\x00\x00\x00\x68\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x83\xC4\x0C"
+				/* 68 ? ? ? ? 68 80 00 00 00 68 ? ? ? ? E8 ? ? ? ? 83 C4 0C */
+			}
+
+			"TheDirector"
+			{
+				"library"	"server"
+				"linux"		"@TheDirector"
+			}
+
+			/* CDirectorMusicBanks::OnRoundStart(CDirectorMusicBanks *__hidden this) */
+			"CDirectorMusicBanks::OnRoundStart"
+			{
+				"library"	"server"
+				"linux"		"@_ZN19CDirectorMusicBanks12OnRoundStartEv"
+				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x56\x57\x8B\x2A\x8B\x0D\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x84\x2A\x0F"
+				/* ? ? ? ? ? ? 56 57 8B ? 8B 0D ? ? ? ? E8 ? ? ? ? 84 ? 0F */
+			}
+
+			/* CTerrorGameRules::GetMissionInfo(CTerrorGameRules *__hidden this) */
+			"CTerrorGameRules::GetMissionInfo"
+			{
+				"library"	"server"
+				"linux"		"@_ZN16CTerrorGameRules14GetMissionInfoEv"
+				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x8B\x2A\x2A\x56\xFF\x2A\x8B\x2A\x8B\x2A\x8B\x2A\x2A\x6A\x2A\xFF\x2A\x8B\x2A\x85\x2A\x75\x2A\x5E"
+				/* ? ? ? ? ? ? ? ? ? ? 8B ? 8B ? ? 56 FF ? 8B ? 8B ? 8B ? ? 6A ? FF ? 8B ? 85 ? 75 ? 5E */
+			}
+		}
+	}
+}

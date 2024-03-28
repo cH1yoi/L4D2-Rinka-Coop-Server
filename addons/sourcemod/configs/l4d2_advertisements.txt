@@ -18,41 +18,46 @@
 	"4"
 	{
 		"type"	"S"
-		"text"	"{GREEN}凛花:{LIGHTGREEN}坏了，被打成战俘出列了!"
+		"text"	"{GREEN} /tgvote {LIGHTGREEN} 多特菜单"
 	}
 	"5"
 	{
 		"type"	"S"
-		"text"	"{GREEN}如何游玩:{LIGHTGREEN}X↑"
+		"text"	"{GREEN} /slots 数量 {LIGHTGREEN} 设置服务器最大人数"
 	}
 	"6"
 	{
 		"type"	"S"
-		"text"	"{GREEN}凛花:{LIGHTGREEN}嘿嘿嘿!"
+		"text"	"{GREEN} /spec {LIGHTGREEN} 旁观"
 	}
 	"7"
 	{
 		"type"	"S"
-		"text"	"{GREEN}凛花:{LIGHTGREEN}坏了，每天对抗都凑不齐8个人"
+		"text"	"{GREEN} /join {LIGHTGREEN} 加入生还者"
 	}
 	"8"
 	{
 		"type"	"S"
-		"text"	"{GREEN}凛花:{LIGHTGREEN}?"
+		"text"	"{GREEN} /bot 数量{LIGHTGREEN} 设置初始Bot数量"
 	}
 	"9"
 	{
 		"type"	"S"
-		"text"	"{GREEN}集火{LIGHTGREEN}TANK!"
+		"text"	"{GREEN} /tkbot {LIGHTGREEN} 旁观状态下接管bot"
 	}
     "10"
 	{
 		"type"	"S"
-		"text"	"{GREEN}不知道指令{LIGHTGREEN};按H看看?.."
+		"text"	"{GREEN} /c {LIGHTGREEN} 替换人物模型选单"
 	}
     "10"
 	{
 		"type"	"S"
-		"text"	"{GREEN}vote菜单{LIGHTGREEN}里面有很多可选项哦!.."
+		"text"	"{GREEN} /vote {LIGHTGREEN} 打开投票菜单,原生投票已禁用"
+	}
+    "11"
+	{
+		"type"	"S"
+		"text"	"{GREEN} 默认特感加强 {LIGHTGREEN} 难度较高,请投票关闭"
 	}
 }
